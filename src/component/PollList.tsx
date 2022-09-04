@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const PollList = () => {
   const [items, setItems] = useState("");
-  const [pollItemsList, setPollItemsList] = useState([]);
+  const [pollItemsList, setPollItemsList] = useState<string[]>([]);
   const handleEvent = (event: any) => {
     setItems(event.target.value);
   };
